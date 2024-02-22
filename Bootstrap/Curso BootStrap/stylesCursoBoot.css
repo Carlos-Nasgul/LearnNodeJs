@@ -96,7 +96,7 @@ h1 {
     /* Margen entre las imágenes */
     opacity: 0;
     /* Inicialmente, las imágenes están ocultas */
-    animation: aparecer 3s ease-in-out 2s forwards;
+    animation: aparecer 2s ease-in-out 2s forwards;
     /* Animación para hacer que las imágenes aparezcan */
 }
 
