@@ -1,0 +1,121 @@
+/* Barra de navegación*/
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos Generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* seccion hero*/
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+}
+
+#fotoPerfil {
+    width: 250px;
+    position: relative;
+    animation-name: vuelo;
+    animation-duration: 3s;
+    /* Duración de la animación */
+    animation-delay: 0.5s;
+    /* Retraso antes de que comience la animación */
+    animation-timing-function: ease-in-out;
+    /* Tipo de aceleración */
+    animation-fill-mode: forwards;
+    /* La animación mantiene su estado final */
+}
+
+@keyframes vuelo {
+    0% {
+        left: -100%;
+        /* Comienza fuera del área visible a la izquierda */
+        opacity: 0;
+        /* Comienza completamente transparente */
+    }
+
+    50% {
+        left: 15%;
+        opacity: 1;
+        transform: rotate(-5deg);
+
+    }
+
+    100% {
+        left: 0;
+        /* Se detiene a la derecha */
+        opacity: 1;
+        /* Se vuelve completamente visible */
+
+    }
+}
+
+
+
+
+
+
+/* Responsive layout*/
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+.rastro-contenedor {
+    display: flex;
+    justify-content: space-between;
+    /* Alinear las imágenes horizontalmente */
+}
+
+.rastro-img {
+    width: 50px;
+    /* Ajusta el tamaño según sea necesario */
+    margin-right: 20px;
+    /* Margen entre las imágenes */
+    opacity: 0;
+    /* Inicialmente, las imágenes están ocultas */
+    animation: aparecer 3s ease-in-out forwards;
+    /* Animación para hacer que las imágenes aparezcan */
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        /* Las imágenes están completamente ocultas */
+        transform: translateX(-100%);
+        /* Desplazamiento inicial fuera de la pantalla por la izquierda */
+    }
+
+    100% {
+        opacity: 1;
+        /* Las imágenes son completamente visibles */
+        transform: translateX(0);
+        /* Desplazamiento al centro o al final */
+    }
+}
+
+/* to do: "Set up the 4 logos 
+to appear behind the rocket as if they were 
+its trail of smoke."
+ */
