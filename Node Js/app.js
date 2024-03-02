@@ -1,7 +1,7 @@
-//const saludo = require("./saludo.js");
+const saludo = require("./saludo.js");
 
 //console.log(saludo.saludar1("freeCodeCamp"));
 
-//console.log(saludo);
+console.log(saludo);
 
-console.log(process.memoryUsage());
+//console.log(process.memoryUsage());

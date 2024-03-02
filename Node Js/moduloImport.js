@@ -3,5 +3,5 @@ const resultado = require("./moduloExport.js");
 
 
 console.log(saludo.saludar1("freeCodeCamp"));
-console.log(resultado.suma(1, 12));
+console.log(resultado.suma(1, 15));
 

@@ -96,7 +96,7 @@ h1 {
     /* Margen entre las imágenes */
     opacity: 0;
     /* Inicialmente, las imágenes están ocultas */
-    animation: aparecer 2s ease-in-out 2s forwards;
+    animation: aparecer 3s ease-in-out 1s forwards;
     /* Animación para hacer que las imágenes aparezcan */
 }
 
@@ -104,8 +104,14 @@ h1 {
     0% {
         opacity: 0;
         /* Las imágenes están completamente ocultas */
-        transform: translateX(-100%);
-        /* Desplazamiento inicial fuera de la pantalla por la izquierda */
+        /* transform: translateX(-100%);
+         Desplazamiento inicial fuera de la pantalla por la izquierda */
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: rotate(20deg);
+
     }
 
     100% {
@@ -113,6 +119,7 @@ h1 {
         /* Las imágenes son completamente visibles */
         transform: translateX(0);
         /* Desplazamiento al centro o al final */
+
     }
 }
 

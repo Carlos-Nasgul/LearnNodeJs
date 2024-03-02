@@ -5,10 +5,10 @@
  */
 
 function mostrarPrueba(tema) {
-    console.log(`Estoy probando mi tema ${tema}`);
+    console.log(`Estoy probando el delayed ${tema}`);
 }
 
-setTimeout(mostrarPrueba, 3000, 'Node');
+setTimeout(mostrarPrueba, 4000, 'Node');
 
 //setInmediat()
 /**
