@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Carlos García">
+    <meta name="decription" content="Portafolio de desarrollo web de Carlos García">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--título de la pestaña-->
+    <title>Carlos García | Dearrollo web Front-End</title>
+    <!--enlace my CSS-->
+    <link rel="stylesheet" href="stylesCursoBoot.css">
+    <!--icono de la pestaña favicon-->
+    <link rel="icon" type="imagenes_portfolio/icons8-mushroom-32" href="imagenes_portfolio/icons8-mushroom-32.png">
+    <!--enlace Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Google Fonts-->
+
+</head>
+
+<body>
+    <!-- Barra de navegación--><!--puedo setear desde aquí-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class=" container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes_portfolio/icons8-mushroom-32.png" width="40" alt="icon-mushroom">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sección Hero-->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img src="imagenes_portfolio/rocket.svg" id="fotoPerfil" alt="foto de perfil de Carlos Garcia">
+            <!-- Agrega las imágenes que deseas que formen el rastro -->
+            <div class="rastro-contenedor d-flex">
+                <img class="rastro-img html" src="imagenes_portfolio/logo_html_color.png" alt="Rastro HTML">
+                <img class="rastro-img css" src="imagenes_portfolio/logo_css_color.png" alt="Rastro CSS">
+                <img class="rastro-img jscript" src="imagenes_portfolio/logo_javascript_color.png"
+                    alt="Rastro JavaScript">
+                <img class="rastro-img react" src="imagenes_portfolio/logo_react_color.png" alt="Rastro React">
+            </div>
+            <div class="hero-secundario d-flex flex-column">
+                <h1>Hola, soy Carlos García</h1>
+                <h2>Aprendiendo Desarrollo web, todo el tiempo.</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./dinamyc.js"></script>
+</body>
+
+</html>
